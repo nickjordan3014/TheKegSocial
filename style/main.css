@@ -35,6 +35,17 @@ body {
         width: 75px;
         position: relative;
     }
+    /*Footer Grid*/
+    .information-grid {
+        grid-template-columns:auto;
+        display: grid;
+        background-color: #51626F !important;
+    }
+    .footer-item {
+        grid-column: auto / span 1;
+        text-align: center;
+    }
+    
 }
 
 /* Large devices (laptops/desktops, 768px and up) */
@@ -64,6 +75,39 @@ body {
         width: 70px;
         padding:5px;
     }
+    /*Footer Grid*/
+    .information-grid {
+        grid-template-columns: 33% 34% 33%;
+        display: grid;
+        background-color: #51626F !important;
+    }
+    .footer-item {
+        grid-column: auto / span 1;
+        text-align: left;
+        margin: 10px;
+    }
 }
 
 /*Footer Styling*/
+.house-info-line {
+    margin-right: 20px; padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.party-button {
+    width: 200px;
+}
+
+.social-media {
+    width: 50px;
+}
+
+.center-word {
+    padding-left: 10px; padding-right: 10px;
+    min-height: 10em;
+    vertical-align: middle;
+}
