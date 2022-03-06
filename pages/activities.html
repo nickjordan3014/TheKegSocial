@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Keg Social - Activities</title>
-    <link rel="shortcut icon"  type="../image/x-icon" href="img/LOGO-White.png">
+    <link rel="shortcut icon"  type="../image/x-icon" href="../img/LOGO-White.png">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="activites/activites.css">
+    <script src="activites/js/slideshow.js"></script>
 </head>
 <body>
     <!--Navigation Bar-->
@@ -42,10 +43,86 @@
             </a>
         </div>
     </div>
-    <div>
-        <!--Body for each page-->
-        Activities
+    <div> <!--Body for Activities Page-->
+        <div class="act_nav">
+            <button id="bowling">Bowling</button>
+            <button id="arcade">Arcade</button>
+            <button id="axe-throwing">Axe Throwing</button>
+            <button id="billards">Billiards</button>
+            <button id="ping-pong">Ping Pong</button>
+            <button id="karaoke">Karaoke</button>
+            <button id="cornhole">Cornhole</button>
+            <button id="beer-pong">Beer Pong</button>
+            <button id="yard-pong">Yard Pong</button>
+        </div>
+        <!--Bowling Slide-->
+        <div class="bowling" id="bowling_div">
+            <div class="slideshow">
+                <div class="slideshow-grid-item">
+                    <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-1">
+                </div>
+                <div class="slideshow-grid-item browser-slide">
+                    <img src="activites/img/bowl.jpg" alt="bowling alley picture" class="act-pics">
+                </div>
+                <div class="slideshow-grid-item browser-slide">
+                    <p>Bowling Lane (Up to 6 People on a Lane)<br>
+                    Monday - Thursday: 25/hour<br>
+                    Friday - Sunday: 35/hour<br>
+                    Shoes: 4/person<br><br>
+                    *Must wear bowling shoes*<br><br>
+                    Forgot socks? We have socks for $4 per pair</p>
+                </div>
+                <div class="slideshow-grid-item mobile-slide">
+                    <img src="activites/img/bowl.jpg" alt="bowling alley picture" class="act-pics">
+                    <p>Bowling Lane (Up to 6 People on a Lane)<br>
+                        Monday - Thursday: 25/hour<br>
+                        Friday - Sunday: 35/hour<br>
+                        Shoes: 4/person<br><br>
+                        *Must wear bowling shoes*<br><br>
+                        Forgot socks? We have socks for $4 per pair</p>
+                </div>
+                <div class="slideshow-grid-item">
+                    <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-1">
+                </div>
+            </div>
+        </div>
+        <!--Axe Throwing Slide-->
+        <div class="axe" id="axe-div">
+            <div class="slideshow">
+                <div class="slideshow-grid-item">
+                    <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-2">
+                </div>
+                <div class="slideshow-grid-item browser-slide">
+                    <img src="activites/img/axe.jpg" alt="axe throwing picture" class="act-pics">
+                </div>
+                <div class="slideshow-grid-item browser-slide">
+                    <p>Axe Throwing Bay (Up to 4 People per Bay)<br>
+                        Monday - Thursday: 25/hour<br>
+                        Friday - Sunday: 35/hour<br><br>
+                        
+                        Waiver: https://kegsocial.idealss.net/ <br><br>
+                        
+                        Closed toed shoes are required to throw axes* <br>
+                        All throwers must be 14 or older*</p>
+                </div>
+                <div class="slideshow-grid-item mobile-slide">
+                    <img src="activites/img/axe.jpg" alt="axe throwing picture" class="act-pics">
+                    <p>Axe Throwing Bay (Up to 4 People per Bay)<br>
+                        Monday - Thursday: 25/hour<br>
+                        Friday - Sunday: 35/hour<br><br>
+                        
+                        Waiver: https://kegsocial.idealss.net/ <br><br>
+                        
+                        Closed toed shoes are required to throw axes* <br>
+                        All throwers must be 14 or older*</p>
+                </div>
+                <div class="slideshow-grid-item">
+                    <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-2">
+                </div>
+            </div>
+        </div>
     </div>
+    <!--footer-->
     <footer>
         <div class="information-grid">
             <div class="footer-item">
