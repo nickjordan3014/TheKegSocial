@@ -1,0 +1,72 @@
+/*Activity Navigation*/
+.act_nav {
+    background-color: #51626F;
+    text-align: center;
+    border: white 1px solid;
+}
+
+button {
+    font-size: 15px;
+    margin-left: 20px; margin-right: 20px;
+    margin-top: 10px; margin-bottom: 10px;
+    background-color: #51626F;
+    color: white;
+    cursor: pointer;
+}
+
+.act-pics {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.arrow-size {
+    width: 50%;
+    cursor: pointer;
+}
+
+.left {
+    float: left;
+    padding: 5px;
+}
+.right {
+    float: right;
+    padding: 5px;
+}
+
+/*Slideshow Grid*/
+@media only screen and (max-width: 768px) {
+    .slideshow {
+        grid-template-columns: 10% 80% 10%;
+        display: grid;
+    }
+
+    .slideshow-grid-item {
+        columns: auto / 1;
+        margin: auto;
+        text-align: left;
+    }
+    .browser-slide {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .slideshow {
+        grid-template-columns: 10% 40% 40% 10%;
+        display: grid;
+    }
+
+    .slideshow-grid-item {
+        columns: auto / 1;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .mobile-slide {
+        display: none;
+    }
+}
+
+.axe {
+    display: none;
+}
