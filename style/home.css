@@ -1,11 +1,13 @@
 /*header image styling*/
 .home-header {
     max-width: 100%;
+    max-height: 100%;
 }
 
 /*image styling*/
 .body-photos {
     width: 100%;
+    margin: auto;
 }
 
 /*text styling*/
@@ -14,17 +16,13 @@
     vertical-align: middle;
 }
 
-/*showing or not showing*/
-.noshow {
-    display: none;
-}
-
 /*Body styling*/
 /*small screen*/
 @media only screen and (max-width: 768px)  {
     .body-grid {
         grid-template-columns: auto;
         display: grid;
+        margin: 5px
     }
     .show {
         display: block;
@@ -38,10 +36,10 @@
     .body-grid {
         grid-template-columns: 50% 50%;
         display: grid;
-        content: justify;
     }
     .body-grid-item {
         column-span: auto / span 1;
+        padding: 10px;
     } 
     .show {
         display: none;
