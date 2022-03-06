@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style/home.css">
 </head>
 <body>
-    <div id="result"></div>
     <!--Navigation Bar-->
     <div class="grid">
         <div class="grid-item"> <!--Navigation to home page-->
@@ -104,7 +103,7 @@
     <footer>
         <div class="information-grid">
             <div class="footer-item">
-                <p">House infomation</p>
+                <p>House infomation</p>
                 <hr class="house-info-line">
                 <p>
                     Hours of Operation: <br>
@@ -123,29 +122,68 @@
             <div class="footer-item">
                 <p>Book a Party</p>
                 <hr class="house-info-line">
-                <img src="img/button.svg" alt="Book a Party Button" class="party-button">
+                <a href="pages/privateevents.html"><img src="img/button.svg" alt="Book a Party Button" class="party-button"></a>
                 <p>Find us on Instagram and Facebook!</p>
                 <hr class="house-info-line">
                 <div>
-                    <a href="https://www.instagram.com/thekegsocial/?hl=en" target="_blank">
+                    <a href="https://www.instagram.com/thekegsocial/?hl=en" target="_blank" class="center-sm">
                         <img src="img/insta.png" alt="Instagram logo" class="social-media">
-                        <span class="center-word"> @thekegsocial</span>
+                        <span class="sep-word">@thekegsocial</span>
                     </a>
                 </div>
-                <div>
-                    <a href="https://www.facebook.com/thekegsocial" target="_blank">
+                <div >
+                    <a href="https://www.facebook.com/thekegsocial" target="_blank" class="center-sm">
                         <img src="img/facebook.png" alt="Facebook logo" class="social-media">
-                        <span class="center-word"> The Keg Social</span>
+                        <span class="sep-word">The Keg Social</span>
                     </a>
                 </div>
             </div>
             <div class="footer-item">
-                <p>form being build sunday</p>
+                <form action="php/sitk.php" name="stay-in-the-know" id="sitk_validation">
+                    <p>Stay in the Know</p>
+                    <hr class="house-info-line">
+                    <dl>
+                        <dt class="dt_footer">
+                            <label for="first_name">First Name* </label>
+                        </dt>
+                        <dd class="dd_footer">
+                            <input type="text" name="first_name" id="first_name" value>
+                        </dd>
+                        <dt class="dt_footer">
+                            <label for="last_name">Last Name* </label>
+                        </dt>
+                        <dd class="dd_footer">
+                            <input type="text" name="last_name" id="last_name" value>
+                        </dd class="dd_footer">
+                        <dt class="dt_footer">
+                            <label for="email">Email*</label>
+                        </dt>
+                        <dd class="dd_footer">
+                            <input type="text" name="email" id="email" value>
+                        </dd>
+                        <dd class="dd_footer">
+                            <input type="submit" id="submit_sitk" value="Submit" class="submit-sitk">
+                        </dd>
+                    </dl>
+                </form>
             </div>
         </div>
     </div> 
+    <div class="footer-end">
         <div class="bottom-nav">
+            <a href="home.html" class="bottom-nav-words">Home</a>
+            <a href="pages/activities.html" class="bottom-nav-words">Activities</a>
+            <a href="pages/eat.html" class="bottom-nav-words">Eat</a>
+            <a href="pages/drink.html" class="bottom-nav-words">Drink</a>
+            <a href="pages/privateevents.html" class="bottom-nav-words">Private Events</a>
+            <a href="pages/careers.html" class="bottom-nav-words">Careers</a>
+            <a href="pages/contact.html" class="bottom-nav-words">Contact</a>
+            <a href="pages/specials.html" class="bottom-nav-words">Specials</a>
+            <a href="pages/faq.html" class="bottom-nav-words">FAQ</a>
+            <hr class="last-line">
+            <span class="bottom-nav-words">Copyright 2022 © The Keg Social | 12850 Waterford Lakes Pkwy Orlando, FL 32828</span>
         </div>
+    </div>
     </footer>
 </body>
 </html>
