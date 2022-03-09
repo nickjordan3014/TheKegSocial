@@ -39,6 +39,9 @@ body {
         grid-column: auto / span 1;
         text-align: center;
     }
+    .goaway {
+        display: none;
+    }
     
 }
 
