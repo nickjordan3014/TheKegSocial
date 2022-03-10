@@ -1,0 +1,34 @@
+/*small body*/
+@media only screen and (max-width: 768px) {}
+
+/*large body*/
+@media only screen and (min-width: 768px) {
+    .pe-grid {
+        grid-template-columns: 33% 34% 33%;
+        display: grid;
+        margin: 20px;
+    }
+    .package-grid-item {
+        columns: auto / span 1;
+    }
+}
+
+.package-details {
+    border: 2px solid white;
+    background-color: #51626F;
+}
+
+.package-price {
+    border: 2px solid white;
+    padding: 10px;
+    background-color: #51626F;
+}
+
+.package-text-elements {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
