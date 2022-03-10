@@ -78,7 +78,7 @@ button {
     font-size: 15px;
     margin-left: 25px; margin-right: 25px;
     margin-top: 10px; margin-bottom: 10px;
-    padding: 15px;
+    padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;
     background-color: #8996A0;
     border: 2px solid black;
     display: inline-block;
