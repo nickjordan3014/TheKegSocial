@@ -9,7 +9,7 @@
         margin: 20px;
     }
     .package-grid-item {
-        columns: auto / span 1;
+        grid-column: auto / span 1;
     }
 }
 
