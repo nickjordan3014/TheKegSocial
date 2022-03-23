@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="drink/drink.css">
     <link rel="shortcut icon" href="../img/LOGO-White.png" type="image/x-icon">
+    <script src="drink/drink-slideshow.js"></script>
 </head>
 <body>
     <!--Navigation Bar-->
@@ -42,10 +43,605 @@
             </a>
         </div>
     </div>
-    <div>
-        <!--Body for each page-->
-        Drink Menu
+
+    <div> <!--Drink Menu-->
+        <div class="drink_nav">
+            <button id="crafted-cocktails">Crafted Cocktails</button>
+            <button id="spirits">Spirits</button>
+            <button id="flights">Flights</button>
+            <button id="lagers">Lagers</button>
+            <br class="goaway">
+            <button id="ciders-sours-saisons">Ciders, Sours, Saisons</button>
+            <button id="ipa-pale-ales">I.P.A Pale Ales</button>
+            <button id="ambers-browns-stouts-browns">Ambers, Browns, Stouts & Porters</button>
+            <button id="golden-blonde-wheatbeers">Golden, Blonde & Wheat Beers</button>
+            <br class="goaway">
+            <button id="bottles-cans">Bottles & Cans</button>
+            <button id="canned-wine">Canned Wine</button>
+            <button id="social-hour">Social Hour</button>
+            <button id="boilermakers">Boilermakers</button>
+        </div>
     </div>
+
+
+    <!--------------------Crafted Cocktails--------------------->
+    <div class="" id="crafted-cocktails-div">
+        <h1 class="center">Crafted Cocktails</h1>
+        <div class="slideshow">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-0">
+            </div>
+            <!--Browser View-->
+            <div class="slideshow-grid-item word-margin browser-slide"> <!--Column 1-->
+                <p class="center">
+                    <strong>Staycation</strong><br>
+                    Tito's, Triple Sec, House Made<br>
+                    Cherry Syrup, Lemon Juice | 12
+                </p>
+                <p class="center">
+                    <strong>Respect Your Elders</strong><br>
+                    Aviation Gin, Germaine, Lemon Juice,<br>
+                    Simple Syrup, Soda | 13
+                </p>
+                <p class="center">
+                    <strong>Pour Decisions</strong><br>
+                    Dobel Silver Tequila, House Made<br>
+                    Pineapple Syrup, Lemon Juice, Soda | 12
+                </p>
+                <p class="center">
+                    <strong>Two to Mango</strong><br>
+                    Hornitos Reposado, Triple Sec, House Made<br>
+                    Mango Puree, Lime Juice | 12
+                </p>
+                <p class="center">
+                    <strong>Jam Session</strong><br>
+                    Brugal Silver Rum, House Made<br>
+                    Blackberry & Basil Syrup, Lime, Soda | 12
+                </p>
+            </div>
+            <div class="slideshow-grid-item word-margin browser-slide"> <!--Column 2-->
+                <p class="center">
+                    <strong>Cherry Popper</strong><br>
+                    Fireball, House Made Cherry Syrup, Lime<br>
+                    Juice, Ginger Beer | 12
+                </p>
+                <p class="center">
+                    <strong>When Life Gives You Makers</strong><br>
+                    Makers Mark, House Made Bitters Syrup, <br>
+                    Lemon Juice, Soda | 13
+                </p>
+                <p class="center">
+                    <strong>Bitter Late Than Never</strong><br>
+                    Plantation Dark Rum, Chocolate & Grapefruit <br>
+                    Bitters, Simple Syrup | 13
+                </p>
+                <p class="center">
+                    <strong>Caffeinated Kraken</strong><br>
+                    Kraken Coffee Rum, Mr Black Coffee Liqeur, <br>
+                    House Made Chocolate Syrup | 13
+                </p>
+                <p class="center">
+                    <strong>George & Ginger</strong><br>
+                    Wheatley Vodka, Sanford Peachy Keen Saison,<br>
+                    Lemon Juice, House Made Ginger Syrup | 12
+                </p>
+            </div>
+            <!--Mobile View-->
+            <div class="slideshow-grid-item word-margin mobile-slide">
+                <p class="center">
+                    <strong>Staycation</strong><br>
+                    Tito's, Triple Sec, House Made<br>
+                    Cherry Syrup, Lemon Juice | 12
+                </p>
+                <p class="center">
+                    <strong>Respect Your Elders</strong><br>
+                    Aviation Gin, Germaine, Lemon Juice,<br>
+                    Simple Syrup, Soda | 13
+                </p>
+                <p class="center">
+                    <strong>Pour Decisions</strong><br>
+                    Dobel Silver Tequila, House Made<br>
+                    Pineapple Syrup, Lemon Juice, Soda | 12
+                </p>
+                <p class="center">
+                    <strong>Two to Mango</strong><br>
+                    Hornitos Reposado, Triple Sec, House Made<br>
+                    Mango Puree, Lime Juice | 12
+                </p>
+                <p class="center">
+                    <strong>Jam Session</strong><br>
+                    Brugal Silver Rum, House Made<br>
+                    Blackberry & Basil Syrup, Lime, Soda | 12
+                </p>
+                <p class="center">
+                    <strong>Cherry Popper</strong><br>
+                    Fireball, House Made Cherry Syrup, Lime<br>
+                    Juice, Ginger Beer | 12
+                </p>
+                <p class="center">
+                    <strong>When Life Gives You Makers</strong><br>
+                    Makers Mark, House Made Bitters Syrup, <br>
+                    Lemon Juice, Soda | 13
+                </p>
+                <p class="center">
+                    <strong>Bitter Late Than Never</strong><br>
+                    Plantation Dark Rum, Chocolate & Grapefruit <br>
+                    Bitters, Simple Syrup | 13
+                </p>
+                <p class="center">
+                    <strong>Caffeinated Kraken</strong><br>
+                    Kraken Coffee Rum, Mr Black Coffee Liqeur, <br>
+                    House Made Chocolate Syrup | 13
+                </p>
+                <p class="center">
+                    <strong>George & Ginger</strong><br>
+                    Wheatley Vodka, Sanford Peachy Keen Saison,<br>
+                    Lemon Juice, House Made Ginger Syrup | 12
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-0">
+            </div>
+        </div>
+    </div>
+    <!--------------------Spirits--------------------->
+    <div class="displayStatus" id="spirits-div">
+        <h1 class="center">Spirits</h1>
+        <div class="slideshow-3-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-1">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin browser-slide"> <!--Col 1-->
+                <p class="center"> <!--Vodka-->
+                    <strong>Vodka</strong><br>
+                    Wheatley 6 <br>
+                    Monkey In Paradise 7 <br>
+                    Tito's 7 <br>
+                    Grey Goose 9
+                </p>
+                <p class="center"> <!--Scotch-->
+                    <strong>Scotch</strong><br>
+                    Dewars 7 <br>
+                    Johnnie Walker Black 9 <br>
+                    Johnnie Walker Blue 60 <br>
+                    Grey Goose 9
+                </p>
+                <p class="center"> <!--Tequila-->
+                    <strong>Tequila</strong><br>
+                    Dobel Silver 7 <br>
+                    Hornitos Reposado 7 <br>
+                    Casamigos Blanco 9 <br>
+                    Don Julio 1942 40
+                </p>
+            </div>
+            <div class="slideshow-grid-item word-margin browser-slide"> <!--Col 2-->
+                <p class="center"> <!--whiskey-->
+                    <strong>Whiskey</strong><br>
+                    Bushmills 6 <br>
+                    Proper 12 7 <br>
+                    Fireball 7 <br>
+                    Skrewball 9 <br>
+                    Jim Beam <br>
+                    Makers Mark 8 <br>
+                    Crown Royal 8 <br>
+                    Crown Royal Apple 8 <br>
+                    Jameson 8 <br>
+                    Woodford Reserve <br>
+                    Bulleit 9 <br>
+                    Basil Hayden 15 <br>
+                    Jack Daniels 8
+                </p>
+                <p class="center"> <!--Gin-->
+                    <strong>Gin</strong><br>
+                    Bombay Sapphire 7 <br>
+                    Aviation 7 <br>
+                    McQueen 7 <br>
+                    The Violet Frog 15
+                </p>
+            </div>
+            <div class="slideshow-grid-item word-margin browser-slide"> <!--Col 3-->
+                <p class="center"> <!--Rum-->
+                    <strong>Rum</strong><br>
+                    Brugal Silver 6 <br>
+                    Bacardi 7 <br>
+                    Captain Morgan 7 <br>
+                    Kraken Coffee <br>
+                    Myers' 7 <br>
+                    Plantation Dark 7 <br>
+                    Siesta Key Coco 7 <br>
+                </p>
+                <p class="center"><!--cordials-->
+                    <strong>Cordials</strong><br>
+                    Rumchata 7 <br>
+                    Rumpleminze 7 <br>
+                    Jagermeister 7 <br>
+                    Kahlua 7 <br>
+                    St.Germaine 7 <br>
+                    Baileys 7<br>
+                    Disaronno 7<br>
+                    Grand Marrier 8
+                </p>
+            </div>
+            <!--------------------Mobile View--------------------->
+            <div class="slideshow-grid-item word-margin mobile-slide">
+                <div class="slideshow-grid-item">
+                    <p class="center"> <!--Vodka-->
+                        <strong>Vodka</strong><br>
+                        Wheatley 6 <br>
+                        Monkey In Paradise 7 <br>
+                        Tito's 7 <br>
+                        Grey Goose 9
+                    </p>
+                    <p class="center"> <!--Scotch-->
+                        <strong>Scotch</strong><br>
+                        Dewars 7 <br>
+                        Johnnie Walker Black 9 <br>
+                        Johnnie Walker Blue 60 <br>
+                        Grey Goose 9
+                    </p>
+                    <p class="center"> <!--Tequila-->
+                        <strong>Tequila</strong><br>
+                        Dobel Silver 7 <br>
+                        Hornitos Reposado 7 <br>
+                        Casamigos Blanco 9 <br>
+                        Don Julio 1942 40
+                    </p>
+                    <p class="center"> <!--whiskey-->
+                        <strong>Whiskey</strong><br>
+                        Bushmills 6 <br>
+                        Proper 12 7 <br>
+                        Fireball 7 <br>
+                        Skrewball 9 <br>
+                        Jim Beam <br>
+                        Makers Mark 8 <br>
+                        Crown Royal 8 <br>
+                        Crown Royal Apple 8 <br>
+                        Jameson 8 <br>
+                        Woodford Reserve <br>
+                        Bulleit 9 <br>
+                        Basil Hayden 15 <br>
+                        Jack Daniels 8
+                    </p>
+                    <p class="center"> <!--Gin-->
+                        <strong>Gin</strong><br>
+                        Bombay Sapphire 7 <br>
+                        Aviation 7 <br>
+                        McQueen 7 <br>
+                        The Violet Frog 15
+                    </p>
+                    <p class="center"> <!--Rum-->
+                        <strong>Rum</strong><br>
+                        Brugal Silver 6 <br>
+                        Bacardi 7 <br>
+                        Captain Morgan 7 <br>
+                        Kraken Coffee <br>
+                        Myers' 7 <br>
+                        Plantation Dark 7 <br>
+                        Siesta Key Coco 7 <br>
+                    </p>
+                    <p class="center"><!--cordials-->
+                        <strong>Cordials</strong><br>
+                        Rumchata 7 <br>
+                        Rumpleminze 7 <br>
+                        Jagermeister 7 <br>
+                        Kahlua 7 <br>
+                        St.Germaine 7 <br>
+                        Baileys 7<br>
+                        Disaronno 7<br>
+                        Grand Marrier 8
+                    </p>
+                </div>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-1">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Flights--------------------->
+    <div class="displayStatus" id="flights_div">
+        <h1 class="center">Flights</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-2">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center"> <!--World Tour-->
+                    <strong>World Tour | 8</strong><br>
+                    Fat Tire, USA <br>
+                    Stella Artois, Belgium <br>
+                    Modelo, Mexico <br>
+                    Life in the Clouds, Canada
+                </p>
+                <p class="center"> <!--Flo Flight-->
+                    <strong>Flo Flight | 10</strong><br>
+                    MIA Megamix, Miami <br>
+                    Crooked Can Cloud Chaser, Orlando <br>
+                    Cigar City Florida Cracker, Tampa <br>
+                    Freedom Tower, Miami
+                </p>
+                <p class="center"> <!--IPA Lane-->
+                    <strong>IPA Lane | 10</strong><br>
+                    Cigar City Jai Alai, Tampa <br>
+                    Crooked Can High Stepper, Orlando <br>
+                    Elysian Space Dust, Washington <br>
+                    Bells 2 Hearted, Michigan
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-2">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Lagers--------------------->
+    <div class="displayStatus" id="lagers_div">
+        <h1 class="center">Lagers</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-3">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center"> <!--Lagers-->
+                    Bud Light, Missouri 4.2% | 5 <br>
+                    Crooked Can Florida Sunshine, Florida, 5% | 7 <br>
+                    Florida Beer Florida Lager, Florida, 5.1% | 6 <br>
+                    Funky Buddha Vibin, Florida, 5% | 7 <br>
+                    Modelo, Mexico, 4.4% | 5 <br>
+                    Stella Artois, Belgium, 5% | 7 <br>
+                    Tank Brewing La Playita, Florida 5.1% | 7
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-3">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Ciders, Sours, Saisons--------------------->
+    <div class="displayStatus" id="ciders_sours_saisons_div">
+        <h1 class="center">Ciders, Sours & Saisons</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-4">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center">
+                    Angry Orchard, Cider, New York, 5% | 7 <br>
+                    AVB Tropical Haze Sour, Sour Ale, California, 4.2% | 8 <br>
+                    FBCO Caribe, Pineapple Cider, Florida, 4.5% | 6 <br>
+                    Sanford Peachy Keen Saison, Florida, 7% | 7
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-4">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------I.P.A & Pale Ales--------------------->
+    <div class="displayStatus" id="ipa_pale_ales_div">
+        <h1 class="center">I.P.A & Pale Ales</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-5">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center">
+                    Bells 2 Hearted IPA, Michigan, 7% | 6 <br>
+                    Big Storm Bromosa IPA, Florida, 7% | 8 <br>
+                    Cigar City Jai Alai IPA, Florida, 7.5% | 7 <br>
+                    Collective Arts Life in the Clouds, Canada 6.2% | 8 <br>
+                    Crooked Can High Stepper IPA, Florida, 7% | 7 <br>
+                    Crooked Can Up Yondah, Florida, 6% | 7 <br>
+                    Elysian Space Dust IPA, Washington, 8.2% | 7 <br>
+                    Founders All Day Session IPA, Michigan, 4.7% | 6 <br>
+                    Lagunitas IPA, California, 6.2% | 7 <br>
+                    MIA Neon White IPA, Florida, 7.5% | 8 <br>
+                    MIA Megamix Pale Ale, Florida, 6% | 8 <br>
+                    Playalinda Pleasure Chest, Florida, 6.6% | 7 <br>
+                    Sweetwater G13 IPA, Georgia, 4.9% | 6 <br>
+                    Sweetwater 420 Pale Ale, Georgia, 5.4% | 6 <br>
+                    Terrapin Luau Krunkles, Georgia, 6.5% | 7
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-5">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Ambers, Browns, Stouts, Porters--------------------->
+    <div class="displayStatus" id="ambers_browns_stouts_porters_div">
+        <h1 class="center">Ambers, Browns, Stouts & Porters</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-6">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center">
+                    Big Storm Wave Maker, Amber Ale, Florida 4.9% | 7 <br>
+                    Cigar City Maduro, Brown Ale, Florida 5.5% | 6 <br>
+                    Fat Tire, Amber Ale, Colorado, 5.2% | 6 <br>
+                    Guinness, Stout, Ireland, 4.2% | 7 <br>
+                    Ivanhoe Tupac ShaPorter, Porter, Florida, 7.3% | 7 <br>
+                    Kentucky Bourbon Barrel Ale, Strong Ale, Kentucky 8.2% | 8 <br>
+                    Tank Brewing Freedom Tower, Amber, Florida 5.3% | 7 <br>
+                    Yuengling, American Amber, Pennsylvania, 4.5% | 5
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-6">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Golden, Blonde, Wheat Beers--------------------->
+    <div class="displayStatus" id="golden_blonde_wheat_beers_div">
+        <h1 class="center">Golden, Blonde & Wheat Beers</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-7">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center">
+                    Big Storm Sunny Key Lime, Wheat, Florida, 4.5% | 8 <br>
+                    Big Storm Tropic Pressure, Blonde, Florida 4.4% | 7 <br>
+                    Cigar City Florida Cracker, Wheat, Florida, 5.5% | 6 <br>
+                    Crooked Can Cloud Chaser, Wheat, Florida 5.4% | 6 <br>
+                    Funky Buddha Floridian, Hefe, Florida, 5.2% | 7 <br>
+                    Kona Big Wave, Blonde Ale, Hawaii, 4.4% | 6 <br>
+                    Orlando Brewing Blonde Ale, Florida, 4.7% | 8 <br>
+                    Sanford Panty Dropper, Belgian Golden Ale, Florida, 10% | 8 <br>
+                    3 Daughters Beach Blonde, Blonde Ale, Florida, 5% | 7
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-7">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Bottles & Cans--------------------->
+    <div class="displayStatus" id="bottles_cans_div">
+        <h1 class="center">Bottles & Cans</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-8">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center">
+                    Budweiser, St. Louis, 5% | 5 <br> 
+                    Blue Moon, Chicago, 5.4% | 5 <br>
+                    Corona, Mexico, 5.4% | 6 <br>
+                    Miller Lite, Milwaukee, 4.2% | 5 <br>
+                    Heineken, Dutch 5% | 6 <br>
+                    Heineken 0%, Dutch | 6 <br>
+                    Pabst Blue Ribbon, Milwaukee, 4.8% | 4 <br>
+                    Collective Arts Guava Gose, Canada, 4.9% | 8 <br>
+                    Whiteclaw, Hard Seltzer, Ireland, 5% | 6
+                    
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-8">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Canned Wines--------------------->
+    <div class="displayStatus" id="canned_wines_div">
+        <h1 class="center">Canned Wine</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-9">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center">
+                    Pinot Noir, Francis Ford Coppola, California | 10 <br>
+                    Sauvignon Blanc, Kim Crawford, New Zealand | 12 <br>
+                    Chardonnay, MERF, Washington | 11 <br>
+                    Cabernet Sauvignon, MERF, Washington | 11 <br>
+                    Moscato, Seven Daughters, Italy | 11 <br>
+                    Rose, Kim Crawford, New Zealand | 12
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-9">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Social Hour--------------------->
+    <div class="displayStatus" id="social_hour_div">
+        <h1 class="center">Social Hour</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-10">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center">
+                    <strong>Monday - Friday: 4PM to 7PM</strong> <br>
+                    <strong>Monday, Wednesday, Thursday: 10PM to 2AM</strong> <br><br>
+
+                    $3 Domestic Beers <br>
+                    Budweiser, Budlight, Miller Lite, Yeungling, Michelob Ultra <br><br>
+
+                    $1 Off Canned Wine <br>
+                    Cabernet Sauvignon, Chadronnay, Moscato, <br>
+                    Pinot Noir, Rose, Sauvignon Blanc <br><br>
+
+                    $5 Call Spirits <br>
+                    Titos, Jim Beam, Captain Morgan, Hornitos <br>
+                    Reposado, Aviation Gin
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-10">
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Boilermakers--------------------->
+    <div class="displayStatus" id="boilermakers_div">
+        <h1 class="center">Boilermakers</h1>
+        <div class="slideshow-1-col">
+            <!--Left Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-right.svg" alt="arrow" class="arrow-size left" id="arrow-left-11">
+            </div>
+            <!--------------------Web View--------------------->
+            <div class="slideshow-grid-item word-margin"> <!--Col 1-->
+                <p class="center">
+                    Whiteclaw & Titos | 11 <br>
+                    Guinness & Jameson | 12 <br>
+                    Caribe Pineapple & Dobel Silver | 11 <br>
+                    Up Yondah & McQueen Gin & The Violet Fog | 15 <br>
+                    Angry Orchard & Crown Apple | 11 <br>
+                    Tupac Shaporter & Kraken Coffee | 10 <br>
+                    Sunny Key Lime & Siesta Key Toasted Coconut | 11 <br>
+                    Stella Artois & Aviation Gin | 10
+                </p>
+            </div>
+            <!--Right Arrow-->
+            <div class="slideshow-grid-item">
+                <img src="../img/arrow-left.svg" alt="arrow" class="arrow-size right" id="arrow-right-11">
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="information-grid">
             <div class="footer-item">
