@@ -1,0 +1,39 @@
+.qaHeader {
+    text-align: center;
+    background-color: #51626F;
+    padding: 1px;
+}
+
+.section {
+    padding: 10px;
+}
+
+.Q-Line, .A-Line {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin-bottom: 10px;
+} 
+
+.Q, .A {
+    font-size: 50px;
+    grid-column: auto / span 1;
+    text-align: right;
+}
+
+.Q {
+    color: #51626F;
+}
+
+.A {
+    color: #8996A0;
+}
+
+.question, .answer {
+    margin-left: 5px;
+    grid-column: auto / span 1;
+    font-size: 16px;
+    display: grid;
+    align-items: center;
+    justify-items: left;
+    padding-left: 10px;
+}
