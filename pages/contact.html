@@ -42,9 +42,37 @@
             </a>
         </div>
     </div>
+    <div class="home-header">
+        <img src="../img/headerImage.png" alt="header image for contact page">
+    </div>
     <div class="content">
-        <!--Body for each page-->
-        Contact
+        <!--Body for contact page-->
+        <p class="center">Send us a message and we'll get back to you as soon as possible</p>
+        <form action="../php/contact.php" name="contact" id="contact-form" class="center-form">
+            <dl>
+                <dt class="dt_form_item">
+                    <label for="first_name_contact">Name:</label>
+                </dt>
+                <dd class="dd_form_item">
+                    <input type="text" name="first_name_contact" id="first_name_contact" placeholder="First" class="input-item">
+                    <input type="text" name="last_name_contact" id="last_name_contact" placeholder="Last">
+                </dd>
+                <dt class="dt_form_item">
+                    <label for="contact-info">Contact Information:</label>
+                </dt>
+                <dd class="dd_form_item">
+                    <input type="text" name="email" id="email_contact" placeholder="Email" class="input-item">
+                    <input type="text" name="phone" id="phone_contact" placeholder="Phone">
+                </dd>
+                <dt class="dt_form_item">
+                    <label for="contact-info">What are you getting in touch about?</label>
+                </dt>
+                <dd class="dd_form_item">
+                    <input type="text" name="email" id="email_contact" placeholder="Email" class="input-item">
+                    
+                </dd>
+            </dl>
+        </form>
     </div>
     <footer>
         <div class="information-grid">

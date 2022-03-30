@@ -1,0 +1,26 @@
+.center {
+    text-align: center;
+}
+
+.center-form {
+    margin: auto;
+    display: block;
+}
+
+.dt_form_item {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.dd_form_item {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input-item {
+    margin-top: 10px;
+    margin-right: 10px;
+}
