@@ -6,6 +6,15 @@ body {
     font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
     color: white;
     height: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+} 
+.content {
+    flex: 1;
+    display: grid;
+    align-items: center;
+    height: 100%;
 }
 .home-header {
     max-width: 100%;
@@ -23,17 +32,16 @@ p {
         grid-template-columns: 1;
         display: grid;
         content: justify;
-    }
-    .grid-item {
+    } .grid-item {
         columns: 1 / auto;
         text-align: center;
     }
+
     .nav-word {
         text-decoration: none;
         color: white;
         display: block;
-    }
-    .nav-logo {
+    } .nav-logo {
         width: 75px;
         position: relative;
     }
