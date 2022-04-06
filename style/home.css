@@ -43,6 +43,9 @@
         column-span: auto / span 1;
         padding: 10px;
     } 
+    .body-grid-item-pic {
+        column-span: auto / span 1;
+    } 
     .show {
         display: none;
     }
