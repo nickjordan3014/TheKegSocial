@@ -32,3 +32,16 @@ h1 {
     text-align: center;
 }
 
+.center-form {
+    margin-left: 25%;
+    color: white;
+}
+
+/*Header Image*/
+.header-image {
+    width: 100vw;
+    height: 38vw;
+    background-image: url("../../img/headerImage.png");
+    background-size: cover;
+}
+

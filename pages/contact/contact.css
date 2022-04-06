@@ -23,4 +23,20 @@
 .input-item {
     margin-top: 10px;
     margin-right: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+.big-box {
+    margin-top: 10px;
+    width: 420px;
+    height: 150px;
+}
+
+/*Header Image*/
+.header-image {
+    width: 100vw;
+    height: 38vw;
+    background-image: url("../../img/headerImage.png");
+    background-size: cover;
 }

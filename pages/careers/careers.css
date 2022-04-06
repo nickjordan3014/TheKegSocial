@@ -1,0 +1,7 @@
+/*Header Image*/
+.header-image {
+    width: 100vw;
+    height: 38vw;
+    background-image: url("../../img/headerImage.png");
+    background-size: cover;
+}

@@ -42,9 +42,7 @@
             </a>
         </div>
     </div>
-    <div class="home-header">
-        <img src="../img/headerImage.png" alt="header image for contact page">
-    </div>
+    <div class="header-image"></div>
     <div class="content">
         <!--Body for contact page-->
         <p class="center">Send us a message and we'll get back to you as soon as possible</p>
@@ -55,21 +53,30 @@
                 </dt>
                 <dd class="dd_form_item">
                     <input type="text" name="first_name_contact" id="first_name_contact" placeholder="First" class="input-item">
-                    <input type="text" name="last_name_contact" id="last_name_contact" placeholder="Last">
+                    <input type="text" name="last_name_contact" id="last_name_contact" placeholder="Last" class="input-item">
                 </dd>
                 <dt class="dt_form_item">
                     <label for="contact-info">Contact Information:</label>
                 </dt>
                 <dd class="dd_form_item">
                     <input type="text" name="email" id="email_contact" placeholder="Email" class="input-item">
-                    <input type="text" name="phone" id="phone_contact" placeholder="Phone">
+                    <input type="text" name="phone" id="phone_contact" placeholder="Phone" class="input-item">
                 </dd>
                 <dt class="dt_form_item">
-                    <label for="contact-info">What are you getting in touch about?</label>
+                    <label for="get-in-touch">What are you getting in touch about?</label>
                 </dt>
                 <dd class="dd_form_item">
-                    <input type="text" name="email" id="email_contact" placeholder="Email" class="input-item">
-                    
+                    <select name="get-in-touch" id="get-in-touch-id" class="input-item">
+                        <option value="general">General</option>
+                        <option value="press">Press</option>
+                        <option value="other">Other</option>
+                    </select>
+                </dd>
+                <dt class="dt_form_item">
+                    <label for="message">Your Message:</label>
+                </dt>
+                <dd class="dd_form_item">
+                    <input type="text" name="message" id="message" class="big-box">
                 </dd>
             </dl>
         </form>
