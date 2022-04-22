@@ -1,6 +1,6 @@
 /*Header Image*/
 .header-image {
-    width: 100vw;
+    width: 100%;
     height: 38vw;
     background-image: url("../../img/headerImage.png");
     background-size: cover;
@@ -21,12 +21,12 @@
 }
 
 .dd_form_item {
-    font-size: 14px;
+    font-size: 18px;
     margin: 5px;
 }
 .form-item {
-    width: 100%;
-    height: 25px;
+    width: 98%;
+    height: 30px;
 }
 /*Grids*/
 .careers-grid {
@@ -45,4 +45,24 @@
 
 .double-item {
     grid-column: auto / span 2;
+}
+
+.hideContent {
+    display: none;
+}
+
+.Questions {
+    font-size: 18px;
+}
+
+.Answers {
+    margin-bottom: 10px;
+}
+
+.desc {
+    padding: 5px;
+    background-color: #76b5e6;
+    border-style: groove;
+    color: black;
+    font-size: 14px;
 }

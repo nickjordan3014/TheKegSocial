@@ -63,69 +63,322 @@
         <div class="single-item"></div>
         <div class="double-item">
             <form action="../php/careers.php" name="careers" id="careers-form" class="form-grid">
-                <dl class="double-item">
+                <dl class="double-item"> <!--todays date-->
                     <dt class="dt_form_item">
                         <label for="date">Today's Date *</label>
                     </dt>
                     <dd class="dd_form_item">
                         <input type="date" name="date" id="date_id" class="form-item">
                     </dd>
-                </dl>
+                </dl><!--first name-->
                 <dl class="single-item">
-                    <dl class="dt_form_item">
+                    <dt class="dt_form_item">
                         <label for="name">First Name</label>
-                    </dl>
+                    </dt>
                     <dd class="dd_form_item">
                         <input type="text" name="first_name" id="firstNameId" class="form-item" placeholder="First Name">
+                        <span id="firstNameValidation" class="hideContent">First Name should only contain letters</span>
                     </dd>
-                </dl>
+                </dl><!--last name-->
                 <dl class="single-item">
-                    <dl class="dt_form_item">
+                    <dt class="dt_form_item">
                         <label for="name">Last Name</label>
-                    </dl>
+                    </dt>
                     <dd class="dd_form_item">
                         <input type="text" name="last_name" id="lastNameId" class="form-item" placeholder="Last Name">
+                        <span id="lastNameValidation" class="hideContent">Last Name should only contain letters</span>
                     </dd>
-                </dl>
+                </dl><!--street address-->
                 <dl class="double-item">
                     <dt class="dt_form_item">
                         <label for="address">Street Address *</label>
                     </dt>
                     <dd class="dd_form_item">
                         <input type="text" name="address" id="address_id" class="form-item" placeholder="Address">
+                        <span id="addressValidation" class="hideContent">Address should only contain letters, numbers, spaces and #'.,-/</span>
                     </dd>
-                </dl>
+                </dl><!--city-->
                 <dl class="single-item">
-                    <dl class="dt_form_item">
+                    <dt class="dt_form_item">
                         <label for="city">City</label>
-                    </dl>
+                    </dt>
                     <dd class="dd_form_item">
                         <input type="text" name="city" id="cityId" class="form-item" placeholder="City">
+                        <span id="cityValidation" class="hideContent">City should only contain Letters, Spaces, and -</span>
                     </dd>
-                </dl>
+                </dl><!--state-->
                 <dl class="single-item">
-                    <dl class="dt_form_item">
+                    <dt class="dt_form_item">
                         <label for="state">State / Province / Region</label>
-                    </dl>
+                    </dt>
                     <dd class="dd_form_item">
                         <input type="text" name="state" id="stateId" class="form-item" placeholder="State">
+                        <span id="stateValidation" class="hideContent">States, Provinces, and Regions should only contain Letters, Spaces, and -</span>
                     </dd>
-                </dl>
+                </dl><!--zip-->
                 <dl class="single-item">
-                    <dl class="dt_form_item">
+                    <dt class="dt_form_item">
                         <label for="zip">Zip / Postal Code</label>
-                    </dl>
+                    </dt>
                     <dd class="dd_form_item">
                         <input type="text" name="zip" id="zipId" class="form-item" placeholder="Zip / Postal Code">
+                        <span id="zipValidation" class="hideContent">Zip/Postal Code should only contain Numbers, Letters, Spaces, and -</span>
                     </dd>
-                </dl>
+                </dl><!--country-->
                 <dl class="single-item">
-                    <dl class="dt_form_item">
+                    <dt class="dt_form_item">
                         <label for="country">Country</label>
-                    </dl>
+                    </dt>
                     <dd class="dd_form_item">
                         <input type="text" name="country" id="countryId" class="form-item" placeholder="Country">
+                        <span id="countryValidation" class="hideContent">Countries should only contain Letters, Spaces, and -</span>
                     </dd>
+                </dl><!--cell phone-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="cellPhone">Cell Phone *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="cellPhone" id="cellPhoneId" class="form-item" placeholder="xxx-xxx-xxxx">
+                        <span id="cellPhoneValidation" class="hideContent">Phone numbers should only contain numbers, -, and ()</span>
+                    </dd>
+                </dl><!--home phone-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="homePhone">Home Phone</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="homePhone" id="homePhoneId" class="form-item" placeholder="xxx-xxx-xxxx">
+                        <span id="homePhoneValidation" class="hideContent">Phone numbers should only contain numbers, -, and ()</span>
+                    </dd>
+                </dl><!--Email-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="email">Email</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="email" id="emailId" class="form-item" placeholder="Email">
+                        <span id="emailValidation" class="hideContent">Email should contain an @ and .</span>
+                    </dd>
+                </dl>
+                <div class="single-item"></div><!--skip space-->
+                <dl class="double-item"> <!--Question 1-->
+                    <dt class="dt_form_item">
+                        <p class="Questions">Are you 18 years or older? *</p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="radio" id="Q1_yes" name="Q1" value="Yes" class="Answers">
+                        <label for="Q1">Yes</label><br>
+                        <input type="radio" id="Q1_no" name="Q1" value="No" class="Answers">
+                        <label for="Q1">No</label>
+                    </dd>
+                </dl>
+                <dl class="double-item"> <!--Question 2-->
+                    <dt class="dt_form_item">
+                        <p class="Questions">
+                            After employment, can you submit verification of your legal rights to work 
+                            in the United States? *
+                        </p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="radio" id="Q2_yes" name="Q2" value="Yes" class="Answers">
+                        <label for="Q2">Yes</label><br>
+                        <input type="radio" id="Q2_no" name="Q2" value="No" class="Answers">
+                        <label for="Q2">No</label>
+                    </dd>
+                </dl>
+                <dl class="double-item"><!--Question 3-->
+                    <dt class="dt_form_item">
+                        <p class="Questions">
+                            Position(s) you would like to apply for: *
+                        </p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="checkbox" id="job1" name="job1" value="Axe Throwing" class="Answers"><!--axe-->
+                        <label for="job1" id="axeDesc">Axe Throwing</label>
+                        <span class="desc hideContent">Axe Throwing Job Description</span><br>
+                        <input type="checkbox" id="job2" name="job2" value="Barback" class="Answers"><!--barback-->
+                        <label for="job2" id="bbDesc">Barback</label>
+                        <span class="desc hideContent">Barback Job Description</span><br>
+                        <input type="checkbox" id="job3" name="job3" value="Bartender" class="Answers"><!--bartender-->
+                        <label for="job3" id="btDesc">Bartender</label>
+                        <span class="desc hideContent">Bartender Job Description</span><br>
+                        <input type="checkbox" id="job4" name="job4" value="Dishwasher" class="Answers"><!--dishwasher-->
+                        <label for="job4" id="dwDesc">Dishwasher</label>
+                        <span class="desc hideContent">Dishwasher Job Description</span><br>
+                        <input type="checkbox" id="job5" name="job5" value="Expo" class="Answers"><!--expo-->
+                        <label for="job5" id="eDesc">Expo</label>
+                        <span class="desc hideContent">Expo Job Description</span><br>
+                        <input type="checkbox" id="job6" name="job6" value="Food Runner" class="Answers"><!--Food Runner-->
+                        <label for="job6" id="frDesc">Food Runner</label>
+                        <span class="desc hideContent">Food Runner Job Description</span><br>
+                        <input type="checkbox" id="job7" name="job7" value="GSR" class="Answers"><!--GSR-->
+                        <label for="job7" id="gsrDesc">Guest Service Representative (GSR)</label>
+                        <span class="desc hideContent">GSR Job Description</span><br>
+                        <input type="checkbox" id="job8" name="job8" value="Host/Activities" class="Answers"><!--Host-->
+                        <label for="job8" id="haDesc">Host/Activities</label>
+                        <span class="desc hideContent">Host and Activities Job Description</span><br>
+                        <input type="checkbox" id="job9" name="job9" value="LeadCook" class="Answers"><!--Lead Cook-->
+                        <label for="job9" id="leadcookDesc">Lead Cook</label>
+                        <span class="desc hideContent">Lead Cook Job Description</span><br>
+                        <input type="checkbox" id="job10" name="job10" value="LineCook" class="Answers"><!--Line Cook-->
+                        <label for="job10" id="linecookDesc">Line Cook</label>
+                        <span class="desc hideContent">Line Cook Job Description</span><br>
+                        <input type="checkbox" id="job11" name="job11" value="Mechanic" class="Answers"><!--mechanic-->
+                        <label for="job11" id="mDesc">Mechanic</label>
+                        <span class="desc hideContent">Mechanic Job Description</span><br>
+                        <input type="checkbox" id="job12" name="job12" value="Prep Cook" class="Answers"><!--prep cook-->
+                        <label for="job12" id="pcDesc">Prep Cook</label>
+                        <span class="desc hideContent">Prep Cook Job Description</span><br>
+                        <input type="checkbox" id="job13" name="job13" value="Sales Coordinator" class="Answers"><!--sales coordinator-->
+                        <label for="job13" id="scDesc">Sales Coordinator</label>
+                        <span class="desc hideContent">Sales Coordinator Job Description</span><br>
+                        <input type="checkbox" id="job14" name="job14" value="Server" class="Answers"><!--server-->
+                        <label for="job14" id="sDesc">Server</label>
+                        <span class="desc hideContent">Server Job Description</span><br>
+                        <input type="checkbox" id="job15" name="job15" value="Supervisor Position" class="Answers"><!--leadership position-->
+                        <label for="job15" id="spDesc">Supervisor Position</label>
+                        <span class="desc hideContent">Supervisor Position Job Description</span>
+                    </dd>
+                </dl>
+                <dl class="double-item">
+                        <h2>Describe Your Availability</h2>
+                        <hr>
+                </dl>
+                <dl class="double-item"><!--Question 4-->
+                    <dt class="dt_form_item">
+                        <p class="Questions">Are you willing/able to work nights? *</p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="radio" id="Q4_yes" name="Q4" value="Q4" class="Answers">
+                        <label for="Q4">Yes</label><br>
+                        <input type="radio" id="Q4_no" name="Q4" value="Q4" class="Answers">
+                        <label for="Q4">No</label>
+                    </dd>
+                </dl>
+                <dl class="double-item"> <!--Question 5-->
+                    <dt class="dt_form_item">
+                        <p class="Questions">Are you willing/able to work on the weekends? *</p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="radio" id="Q5_yes" name="Q5" value="Q5" class="Answers">
+                        <label for="Q5">Yes</label><br>
+                        <input type="radio" id="Q4_no" name="Q5" value="Q5" class="Answers">
+                        <label for="Q5">No</label>
+                    </dd>
+                </dl>
+                <dl class="double-item"> <!--Question 6-->
+                    <dt class="dt_form_item">
+                        <p class="Questions">Are you willing/able to work a rotational work schedule? *</p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="radio" id="Q6_yes" name="Q6" value="Q6" class="Answers">
+                        <label for="Q6">Yes</label><br>
+                        <input type="radio" id="Q6_no" name="Q6" value="Q6" class="Answers">
+                        <label for="Q6">No</label>
+                    </dd>
+                </dl>
+                <dl class="double-item"> <!--Question 7-->
+                    <dt class="dt_form_item">
+                        <p class="Questions">Are you willing/able to work overtime? *</p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="radio" id="Q7_yes" name="Q7" value="Q7" class="Answers">
+                        <label for="Q7">Yes</label><br>
+                        <input type="radio" id="Q7_no" name="Q7" value="Q7" class="Answers">
+                        <label for="Q7">No</label>
+                    </dd>
+                </dl>
+                <dl class="double-item">
+                    <h2>Educational Experience</h2>
+                    <hr>
+                </dl>
+                <dl class="single_item">
+                    <dt class="dt_form_item">
+                        <label for="highschool">High School Name *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="highschool" id="hsId" class="form-item" placeholder="High School Name">
+                    </dd>
+                </dl>
+                <dl class="single_item">
+                    <dt class="dt_form_item">
+                        <label for="gradyear">Graduation Year</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="number" name="gradyear" id="gradyearId" class="form-item" placeholder="Graduation Year">
+                    </dd>
+                </dl>
+                <dl class="single_item">
+                    <dt class="dt_form_item">
+                        <label for="college">College/University *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="college" id="collegeId" class="form-item" placeholder="College/University">
+                    </dd>
+                </dl>
+                <dl class="single_item">
+                    <dt class="dt_form_item">
+                        <label for="cgradyear">Graduation Year</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="number" name="cgradyear" id="cgradyearId" class="form-item" placeholder="Graduation Year">
+                    </dd>
+                </dl>
+                <dl class="single_item">
+                    <dt class="dt_form_item">
+                        <label for="trade">Trade/Other *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="trade" id="tradeId" class="form-item" placeholder="Trade/Other">
+                    </dd>
+                </dl>
+                <dl class="single_item">
+                    <dt class="dt_form_item">
+                        <label for="tgradyear">Graduation Year</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="number" name="tgradyear" id="tgradyearId" class="form-item" placeholder="Graduation Year">
+                    </dd>
+                </dl>
+                <dl class="double-item">
+                    <dt class="dt_form_item">
+                        <p class="Questions"><strong>How were you referred to us? *</strong></p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="checkbox" name="option1"  value="option1" id="walk-in" class="Answers">
+                        <label for="option1">Walk-in</label><br>
+                        <input type="checkbox" name="option2"  value="option2" id="facebook" class="Answers">
+                        <label for="option2">Facebook</label><br>
+                        <input type="checkbox" name="option3"  value="option3" id="indeed" class="Answers">
+                        <label for="option3">Indeed</label><br>
+                        <input type="checkbox" name="option4"  value="option4" id="instagram" class="Answers">
+                        <label for="option4">Instagram</label><br>
+                        <input type="checkbox" name="option5"  value="option5" id="wordofmouth" class="Answers">
+                        <label for="option5">Word of Mouth</label><br>
+                        <input type="checkbox" name="option6"  value="option6" id="employee" class="Answers">
+                        <label for="option6">Employee</label>
+                    </dd>
+                </dl>
+                <dl class="double-item">
+                    <dt class="dt_form_item">
+                        <p class="Questions"><strong>Upload Resume</strong></p>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <label for="resume"></label>
+                        <input type="file" id="resume" name="resume">
+                    </dd>
+                </dl>
+                <dl class="double-item">
+                    <dt class="dt_form_item">
+                        <h2>Job Skills / Training</h2>
+                        <hr>
+                    </dt>
+                </dl>
+                <dl class="double-item">
+                    <dt class="dt_form_item">
+                        <p class="Questions">What makes you amazing at what you're applying for? *</p>
+                    </dt>
                 </dl>
             </form>
         </div>
