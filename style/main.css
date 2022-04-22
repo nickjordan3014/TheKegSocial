@@ -5,16 +5,9 @@ body {
     background-color: #1A2732;
     font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
     color: white;
-    height: 100%;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-} 
+}
 .content {
-    flex: 1;
     display: grid;
-    align-items: center;
-    height: 100%;
 }
 
 p {
