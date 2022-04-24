@@ -7,6 +7,7 @@ body {
     color: white;
 } 
 
+
 p {
     font-size: 16px;
 }
@@ -31,6 +32,18 @@ p {
     } .nav-logo {
         width: 75px;
         position: relative;
+    }
+    .content {
+        flex: none;
+        display: grid;
+        align-items: center;
+        height: none;
+    }
+    body {
+        height: none;
+        display: none;
+        min-height: none;
+        flex-direction: none;
     }
     /*Footer Grid*/
     .information-grid {
@@ -78,6 +91,22 @@ p {
     .nav-logo {
         width: 70px;
         padding:5px;
+    }
+    .content {
+        flex: 1;
+        display: grid;
+        align-items: center;
+        height: 100%;
+    }
+    body {
+        height: 100%;
+        display: -webkit-box-;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
     }
     /*Footer Grid*/
     .information-grid {
