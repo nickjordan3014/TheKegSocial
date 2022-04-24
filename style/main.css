@@ -33,18 +33,6 @@ p {
         width: 75px;
         position: relative;
     }
-    .content {
-        flex: none;
-        display: grid;
-        align-items: center;
-        height: none;
-    }
-    body {
-        height: none;
-        display: none;
-        min-height: none;
-        flex-direction: none;
-    }
     /*Footer Grid*/
     .information-grid {
         grid-template-columns:auto;
